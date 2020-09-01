@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IIC</title>
+
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://netdna.bootstrapcdn.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+
+
+<link rel='stylesheet' id='layerslider-css'  href='app/plugins/layerslider/assets/static/layerslider/css/layerslider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='business/wp-includes/css/dist/block-library/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css'  href='app/plugins/woocommerce/packages/woocommerce-blocks/build/style-legacy.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='app/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mega-submenu-css'  href='app/plugins/mega-submenu/public/css/style.css' type='text/css' media='all' />
+<style id='mega-submenu-inline-css' type='text/css'>
+.vc_custom_1496913910362{padding-top: 1px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;}.vc_custom_1496913708590{padding: 0px !important;}.vc_custom_1496913714454{padding: 0px !important;}.vc_custom_1496913720767{padding: 0px !important;}.vc_custom_1496913726093{padding: 0px !important;}.vc_custom_1496913731245{padding: 0px !important;}.vc_custom_1494591234418{margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1499249901868{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1494591251976{margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1499249909600{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1494591341637{margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1499249919284{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1494591270984{margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1499249930372{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1494591289182{margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1499249936693{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1494591289182{margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1499249943800{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1498741583682{padding-top: 4% !important;padding-right: 4% !important;padding-bottom: 2% !important;padding-left: 4% !important;background-color: #ffffff !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1498661189291{margin-bottom: 30px !important;}.vc_custom_1498740850547{margin-top: 30px !important;margin-bottom: 25px !important;}.vc_custom_1498820032615{padding-top: 35px !important;padding-bottom: 42px !important;background-image: url(app/uploads/sites/8/2017/06/01-2.png) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1498820042771{padding-top: 30px !important;padding-bottom: 45px !important;background-image: url(app/uploads/sites/8/2017/06/02.png) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1498730628065{padding-top: 30px !important;padding-bottom: 30px !important;background-color: #55acee !important;}.vc_custom_1497954294399{margin-top: 13px !important;margin-left: 28px !important;}.vc_custom_1498740814771{margin-top: 0px !important;margin-bottom: 0px !important;padding-left: 105px !important;}.vc_custom_1499082303431{margin-top: 0px !important;margin-bottom: 20px !important;padding-left: 105px !important;}.vc_custom_1499082338650{margin-top: 0px !important;margin-bottom: 20px !important;padding-top: 0px !important;padding-left: 30px !important;}.vc_custom_1498647995176{margin-left: 30px !important;}.vc_custom_1497954303163{margin-top: 13px !important;margin-left: 28px !important;}.vc_custom_1498740820460{margin-top: 0px !important;margin-bottom: 0px !important;padding-left: 105px !important;}.vc_custom_1499082307832{margin-top: 0px !important;margin-bottom: 20px !important;padding-left: 105px !important;}.vc_custom_1499082346854{margin-top: 0px !important;margin-bottom: 20px !important;padding-left: 30px !important;}.vc_custom_1498648000438{margin-left: 30px !important;}.vc_custom_1497954310390{margin-top: 13px !important;margin-left: 28px !important;}.vc_custom_1498740825259{margin-top: 0px !important;margin-bottom: 0px !important;padding-left: 120px !important;}.vc_custom_1499082311774{margin-top: 0px !important;margin-bottom: 20px !important;padding-left: 120px !important;}.vc_custom_1499082352411{margin-top: 0px !important;margin-bottom: 20px !important;padding-left: 30px !important;}.vc_custom_1498648000438{margin-left: 30px !important;}
+.msm_content_box-dc5708f6f5558b72258fcdbfe4d98dfe:hover{background-color:#55acee;}
+.msm_content_box-fa4757c9567234868a2789b6abafdb71:hover{background-color:#55acee;}
+.msm_content_box-fa4757c9567234868a2789b6abafdb71:hover{background-color:#55acee;}
+.msm_content_box-b7f0eb1287f0f073dedbed0cc88cfb39:hover{background-color:#55acee;}
+.msm_content_box-0a376fbebde0d2d368a90cf6f3ba0657:hover{background-color:#55acee;}
+.msm_content_box-2cc77c965017e3bd306a4f420a1fae93:hover{background-color:#55acee;}
+</style>
+
+<link rel='stylesheet' id='smart-grid-css'  href='app/plugins/smart-grid-gallery/includes/dist/sgg.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='timetable_sf_style-css'  href='app/plugins/timetable/style/superfish.css' type='text/css' media='all' />
+<link rel='stylesheet' id='timetable_gtip2_style-css'  href='app/plugins/timetable/style/jquery.qtip.css' type='text/css' media='all' />
+<link rel='stylesheet' id='timetable_style-css'  href='app/plugins/timetable/style/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='timetable_event_template-css'  href='app/plugins/timetable/style/event_template.css' type='text/css' media='all' />
+<link rel='stylesheet' id='timetable_responsive_style-css'  href='app/plugins/timetable/style/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='timetable_font_lato-css'  href='http://fonts.googleapis.com/css?family=Lato%3A400%2C700&amp;ver=5.1.1' type='text/css' media='all' />
+
+<link rel='stylesheet' id='_aislin-purchase-button-fonts-css'  href='http://fonts.googleapis.com/css?family=Roboto%3A400%2C700&amp;ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='_aislin-purchase-button-css'  href='app/plugins/wp-plugin-aislin-purchase-button/public/css/main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='module-frontend-css'  href='app/plugins/woothemes-sensei/plugins/sensei-lms/assets/css/modules-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sensei-frontend-css'  href='app/plugins/woothemes-sensei/plugins/sensei-lms/assets/css/frontend/sensei.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='skilled-theme-icons-css'  href='app/themes/skilled/assets/css/theme-icons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='testimonial-rotator-style-css'  href='app/plugins/testimonial-rotator/testimonial-rotator-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='font-awesome/latest/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sensei-wcpc-courses-css'  href='app/plugins/woothemes-sensei/plugins/sensei-wc-paid-courses/assets/css/sensei-wcpc-courses.css' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='app/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bsf-Defaults-css'  href='app/uploads/sites/8/smile_fonts/defaults/defaults.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ultimate-style-css'  href='app/plugins/ultimate_vc_addons/assets/min-css/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='skilled-plugin-style-css'  href='app/plugins/skilled-plugin/public/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='groundwork-grid-css'  href='app/themes/skilled/assets/css/groundwork-responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='skilled-style-css'  href='app/themes/skilled/style.css' type='text/css' media='all' />
+<style id='skilled-style-inline-css' type='text/css'>
+.header-mobile {display: none;}@media screen and (max-width:1000px) {.header-left {padding-left: 0;}.wh-header, .wh-top-bar {display: none;}.header-mobile {display: block;}}
+</style>
+<link rel='stylesheet' id='iconsmind-line-icons-css'  href='app/themes/skilled/assets/css/iconsmind-line-icons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='linear-icons-css'  href='app/themes/skilled/assets/css/linear-icons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-skilled_options-css' href="https://fonts.googleapis.com/css?family=Rubik%3A300%2C400%2C500%2C700%2C900%2C300italic%2C400italic%2C500italic%2C700italic%2C900italic%7CRaleway%3A600%2C700&amp;subset=latin&amp;ver=1560517728" type='text/css' media='all' />
+<link rel='stylesheet' id='skilled_options_style-css'  href='app/uploads/sites/8/skilled_options_style.css' type='text/css' media='all' />
+<style id='skilled_options_style-inline-css' type='text/css'>
+.lin-slider-button:hover {
+  border-color: #ffc50d !important;
+  color: #ffc50d !important;
+}
+.lin-slider-alt-button {
+    border-color: #ffc50d !important;
+      background-color: #ffc50d !important;
+      color: #fff !important;
+}
+@media (max-width: 850px) {
+    .wh-top-bar-additional .scp-icon-bullet-text-icon {
+        font-size: 28px !important;
+    }
+}
+.page-template-template-home-transparent-header .sk-accent-text h3 {
+    color: #fff !important;
+}
+.sk-accent-text em {
+    color: #f6e100;
+    margin-right: 5px;
+    font-style: normal;
+}
+@media (max-width: 1050px) {
+    .sk-accent-text .vc_column-inner {
+        padding-top: 0 !important;
+    }
+}.vc_custom_1499246862736{border-bottom-width: 1px !important;padding-bottom: 5px !important;border-bottom-color: rgba(255,255,255,0.04) !important;border-bottom-style: solid !important;}.vc_custom_1497355882172{padding-top: 5px !important;}.vc_custom_1499247862475{padding-top: 1px !important;}.vc_custom_1499247879465{padding-top: 17px !important;}.vc_custom_1499247888242{padding-top: 22px !important;}.vc_custom_1499082227376{margin-bottom: 5px !important;padding-top: 10px !important;}.vc_custom_1497448436115{margin-left: -17px !important;}.vc_custom_1495712042896{margin-bottom: 0px !important;padding-top: 5px !important;padding-right: 5px !important;padding-bottom: 5px !important;padding-left: 5px !important;}.vc_custom_1495712050544{margin-bottom: 0px !important;padding-top: 5px !important;padding-right: 5px !important;padding-bottom: 5px !important;padding-left: 5px !important;}.vc_custom_1495712057678{margin-bottom: 0px !important;padding-top: 5px !important;padding-right: 5px !important;padding-bottom: 5px !important;padding-left: 5px !important;}.vc_custom_1495712065253{margin-bottom: 0px !important;padding-top: 5px !important;padding-right: 5px !important;padding-bottom: 5px !important;padding-left: 5px !important;}.vc_custom_1555408991145{margin-top: 0px !important;margin-bottom: 0px !important;margin-left: -35px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1499247185503{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1498731873916{margin-bottom: 0px !important;padding-top: 20px !important;padding-bottom: 20px !important;}.vc_custom_1498816027003{margin-bottom: 40px !important;padding-top: 15px !important;}.vc_custom_1498645418339{border-top-width: 1px !important;border-bottom-width: 1px !important;padding-top: 30px !important;padding-bottom: 35px !important;border-top-color: rgba(255,255,255,0.07) !important;border-top-style: solid !important;border-bottom-color: rgba(255,255,255,0.07) !important;border-bottom-style: solid !important;}.vc_custom_1496911172780{padding-top: 5px !important;}.vc_custom_1498815965908{margin-bottom: 0px !important;}.vc_custom_1498816102915{margin-bottom: 0px !important;}.vc_custom_1490007556855{margin-bottom: 0px !important;}.vc_custom_1490007547463{margin-bottom: 0px !important;}.vc_custom_1496749370573{margin-bottom: 20px !important;}.vc_custom_1495456492688{margin-right: 15% !important;margin-bottom: 25px !important;}.vc_custom_1496749480644{margin-bottom: 20px !important;}.vc_custom_1495456315180{margin-bottom: 7px !important;}.vc_custom_1495456319476{margin-bottom: 7px !important;}.vc_custom_1495456323955{margin-bottom: 7px !important;}.vc_custom_1555409007585{margin-bottom: 7px !important;}.vc_custom_1495456327524{margin-bottom: 7px !important;}.vc_custom_1495456331131{margin-bottom: 7px !important;}.vc_custom_1496749498711{margin-bottom: 20px !important;}.vc_custom_1495456367890{margin-bottom: 7px !important;}.vc_custom_1495456359690{margin-bottom: 7px !important;}.vc_custom_1495456355098{margin-bottom: 7px !important;}.vc_custom_1495456349979{margin-bottom: 7px !important;}.vc_custom_1495456345189{margin-bottom: 7px !important;}.vc_custom_1495456340590{margin-bottom: 7px !important;}.vc_custom_1495456336327{margin-bottom: 7px !important;}.vc_custom_1496749513529{margin-bottom: 20px !important;}.vc_custom_1495456492688{margin-right: 15% !important;margin-bottom: 25px !important;}.vc_custom_1494415337866{margin-bottom: 0px !important;padding-top: 5px !important;padding-right: 5px !important;padding-bottom: 5px !important;padding-left: 5px !important;}.vc_custom_1494415343524{margin-bottom: 0px !important;padding-top: 5px !important;padding-right: 5px !important;padding-bottom: 5px !important;padding-left: 5px !important;}.vc_custom_1494415348901{margin-bottom: 0px !important;padding-top: 5px !important;padding-right: 5px !important;padding-bottom: 5px !important;padding-left: 5px !important;}.vc_custom_1494415353492{margin-bottom: 0px !important;padding-top: 5px !important;padding-right: 5px !important;padding-bottom: 5px !important;padding-left: 5px !important;}.vc_custom_1498645263172{margin-bottom: 0px !important;padding-top: 0px !important;}.vc_custom_1498645524637{margin-bottom: 0px !important;}.vc_custom_1498645429174{margin-bottom: 0px !important;padding-top: 0px !important;}.vc_custom_1496751804171{margin-bottom: 10px !important;}.vc_custom_1496753735175{margin-right: 15% !important;margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1498645354858{margin-right: 15% !important;}.vc_custom_1491466992847{margin-bottom: 0px !important;padding-top: 25px !important;padding-bottom: 10px !important;}.vc_custom_1491466989293{margin-bottom: 0px !important;padding-top: 25px !important;padding-bottom: 10px !important;}
+/* Main menu link colors */
+.sf-menu.wh-menu-main li a {
+    color: #fff;
+}
+.sf-menu.wh-menu-main li a:hover {
+    color: #ADAAAA;
+}
+.sf-menu.wh-menu-main .sub-menu li a {
+    color: #333;
+}
+.sf-menu.wh-menu-main .sub-menu li a:hover {
+    color: #fff;
+}
+.sf-menu.wh-menu-main .senseiloginlogout::before {
+    color: #fff;
+}
+/* Main menu sticky link colors */
+.wh-sticky-header .sf-menu.wh-menu-main li a {
+    color: #333;
+}
+.wh-sticky-header .sf-menu.wh-menu-main li a:hover {
+    color: #999;
+}
+.wh-sticky-header .sf-menu.wh-menu-main .sub-menu li a:hover {
+    color: #fff;
+}
+.wh-sticky-header .sf-menu.wh-menu-main .senseiloginlogout::before {
+    color: #333;
+}
+.wh-top-bar-additional {
+    border-bottom: 1px solid rgba(111, 111, 111, 0.4);
+}
+.sk-separator {
+width: 35px;
+}
+.scp_content_box-a2c75dc281cfa3fb88aa5fb72002af48:hover{background-color:#ffffff;}
+.scp_theme_icon-354a732adcab3c94e6ed16ade1b888d9.wh-theme-icon{font-size:45px !important;position:absolute;color:#012e5b !important;}
+.scp_content_box-b3186e095a87308614d7c53c5f41b53f:hover{background-color:#ffffff;}
+.scp_theme_icon-028112d43e803e334f83cb31274d207a.wh-theme-icon{font-size:45px !important;position:absolute;color:#012e5b !important;}
+.scp_content_box-ca12bf87001f96b754bfbe4e6cdf0c53:hover{background-color:#ffffff;}
+.scp_theme_icon-da31af46bc480627ae5820dafbe369c0.wh-theme-icon{font-size:45px !important;position:absolute;color:#012e5b !important;}
+.scp_content_box-25d7bfc49ec44426954d41b9f7a5d7f9:hover{background-color:#ffffff;}
+.scp_theme_icon-fb0f9cf1592710a2a252d9202663f5bf.wh-theme-icon{font-size:45px !important;position:absolute;color:#012e5b !important;}
+.scp_content_box-eea85607c20cbaf5cc105e07040fb642:hover{background-color:#ffffff;}
+.scp_theme_icon-df323c4d4c6793e48c398b73784b4acc.wh-theme-icon{font-size:45px !important;position:absolute;color:#012e5b !important;}
+.scp_content_box-e039a0acce6ff7ea3f372fe6a40b9561:hover{background-color:#ffffff;}
+.scp_theme_icon-00a1b93e536ccdd29631c8b6f9b2f071.wh-theme-icon{font-size:45px !important;position:absolute;color:#012e5b !important;}
+.scp_icon-0a7f43e1007ac69850a095188879299a.scp-icon-background{margin:0 8px;text-align:center;}.scp_icon-0a7f43e1007ac69850a095188879299a i{color:#666;font-size:20px;line-height:46px;}.scp_icon-0a7f43e1007ac69850a095188879299a i:hover{color:#666}
+.scp_icon-76ecb01287788e632816282ece8dc52d.scp-icon-background{margin:0 8px;text-align:center;}.scp_icon-76ecb01287788e632816282ece8dc52d i{color:#666;font-size:20px;line-height:46px;}.scp_icon-76ecb01287788e632816282ece8dc52d i:hover{color:#666}
+.scp_icon-94b75c9ffc2f5002c006e18274b3feda.scp-icon-background{margin:0 8px 0 25px;text-align:center;}.scp_icon-94b75c9ffc2f5002c006e18274b3feda i{color:#666;font-size:20px;line-height:46px;}.scp_icon-94b75c9ffc2f5002c006e18274b3feda i:hover{color:#666}
+.scp_icon_bullet_text-e6a204cd4f76a987f06caac94ca7d007.scp-shortcode{padding:0px;margin:0px 15px 0px 0px;}.scp_icon_bullet_text-e6a204cd4f76a987f06caac94ca7d007 .scp-icon-bullet-text-icon{color:#666;font-size:40px;}.scp_icon_bullet_text-e6a204cd4f76a987f06caac94ca7d007 .title{color:#f6c016;}.scp_icon_bullet_text-e6a204cd4f76a987f06caac94ca7d007 .scp-icon-bullet-text-text{margin:-5px 0px 0px 0px;}.scp_icon_bullet_text-e6a204cd4f76a987f06caac94ca7d007 .subtitle{color:#666;}.scp_icon_bullet_text-e6a204cd4f76a987f06caac94ca7d007 .description{color:#666;}
+.scp_icon_bullet_text-cfff5f296f3d80857beef318cae02f3d.scp-shortcode{padding:0px;margin:0px 15px 0px 0px;}.scp_icon_bullet_text-cfff5f296f3d80857beef318cae02f3d .scp-icon-bullet-text-icon{color:#666;font-size:40px;}.scp_icon_bullet_text-cfff5f296f3d80857beef318cae02f3d .title{color:#f6c016;}.scp_icon_bullet_text-cfff5f296f3d80857beef318cae02f3d .scp-icon-bullet-text-text{margin:-5px 0px 0px 0px;}.scp_icon_bullet_text-cfff5f296f3d80857beef318cae02f3d .subtitle{color:#666;}.scp_icon_bullet_text-cfff5f296f3d80857beef318cae02f3d .description{color:#666;}
+</style>
+<script type='text/javascript' src='business/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wheels = {"siteName":"Business","data":{"useScrollToTop":true,"useStickyMenu":true,"scrollToTopText":"","isAdminBarShowing":false,"initialWaypointScrollCompensation":"120","preloaderSpinner":0,"preloaderBgColor":"#304ffe"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='business/wp-includes/js/jquery/jquery-migrate.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"6.11.1","fixGSAP":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='app/plugins/layerslider/assets/static/layerslider/js/layerslider.utils.js'></script>
+<script type='text/javascript' src='app/plugins/layerslider/assets/static/layerslider/js/layerslider.kreaturamedia.jquery.js'></script>
+<script type='text/javascript' src='app/plugins/layerslider/assets/static/layerslider/js/layerslider.transitions.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var msm_mega_submenu = {"data":{"submenu_items_position_relative":0,"mobile_menu_trigger_click_bellow":768}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='app/plugins/mega-submenu/public/js/msm-main.min.js'></script>
+<script type='text/javascript' src='app/plugins/smart-grid-gallery/includes/dist/sgg.min.js'></script>
+<script type='text/javascript' src='app/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockui.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/business\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/business\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/skilled.aislinthemes.com\/business\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='app/plugins/woocommerce/assets/js/frontend/add-to-cart.js'></script>
+<script type='text/javascript' src='app/plugins/wp-plugin-aislin-purchase-button/public/js/main.js'></script>
+<script type='text/javascript'>
+if (top.location != self.location) top.location.replace(self.location)
+</script>
+<script type='text/javascript' src='app/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js'></script>
+<script type='text/javascript' src='app/plugins/testimonial-rotator/js/jquery.cycletwo.js'></script>
+<script type='text/javascript' src='app/plugins/testimonial-rotator/js/jquery.cycletwo.addons.js'></script>
+<script type='text/javascript' src='app/plugins/ultimate_vc_addons/assets/min-js/ultimate-params.min.js'></script>
+<script type='text/javascript' src='app/themes/skilled/assets/js/vendor/modernizr-2.7.0.min.js'></script>
+<meta name="generator" content="Powered by LayerSlider 6.11.1 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+<!-- LayerSlider updates and docs at: https://layerslider.kreaturamedia.com -->
+<link rel='https://api.w.org/' href='http://skilled.aislinthemes.com/business/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://skilled.aislinthemes.com/business/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://skilled.aislinthemes.com/business/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.1" />
+<meta name="generator" content="WooCommerce 4.0.1" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="http://skilled.aislinthemes.com/business/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fskilled.aislinthemes.com%2Fbusiness%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://skilled.aislinthemes.com/business/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fskilled.aislinthemes.com%2Fbusiness%2F&amp;format=xml" />
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="http://skilled.aislinthemes.com/business"><link rel="https://theeventscalendar.com/" href="http://skilled.aislinthemes.com/business/wp-json/tribe/events/v1/" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+<style type="text/css" id="breadcrumb-trail-css">.breadcrumbs .trail-browse,.breadcrumbs .trail-items,.breadcrumbs .trail-items li {display: inline-block;margin:0;padding: 0;border:none;background:transparent;text-indent: 0;}.breadcrumbs .trail-browse {font-size: inherit;font-style:inherit;font-weight: inherit;color: inherit;}.breadcrumbs .trail-items {list-style: none;}.trail-items li::after {content: "\002F";padding: 0 0.5em;}.trail-items li:last-of-type::after {display: none;}</style>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<style type="text/css" data-type="vc_custom-css">/* Main menu link colors */
+.sf-menu.wh-menu-main li a {
+    color: #fff;
+}
+.sf-menu.wh-menu-main li a:hover {
+    color: #ADAAAA;
+}
+.sf-menu.wh-menu-main .sub-menu li a {
+    color: #333;
+}
+.sf-menu.wh-menu-main .sub-menu li a:hover {
+    color: #fff;
+}
+.sf-menu.wh-menu-main .senseiloginlogout::before {
+    color: #fff;
+}
+/* Main menu sticky link colors */
+.wh-sticky-header .sf-menu.wh-menu-main li a {
+    color: #333;
+}
+.wh-sticky-header .sf-menu.wh-menu-main li a:hover {
+    color: #999;
+}
+.wh-sticky-header .sf-menu.wh-menu-main .sub-menu li a:hover {
+    color: #fff;
+}
+.wh-sticky-header .sf-menu.wh-menu-main .senseiloginlogout::before {
+    color: #333;
+}
+.wh-top-bar-additional {
+    border-bottom: 1px solid rgba(111, 111, 111, 0.4);
+}
+.sk-separator {
+width: 35px;
+}</style>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1497359293459{margin-bottom: 35px !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1497448007205{margin-bottom: 55px !important;}.vc_custom_1496736953040{padding-top: 20px !important;background-color: #f0f2f5 !important;}.vc_custom_1497605231627{background-color: #f0f2f5 !important;}.vc_custom_1497605283518{padding-bottom: 50px !important;background-color: #f0f2f5 !important;}.vc_custom_1499082708901{padding-top: 7px !important;padding-bottom: 15px !important;background-image: url(app/uploads/sites/8/2017/06/az.jpg) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1497359159460{margin-top: 50px !important;margin-bottom: 35px !important;}.vc_custom_1499690859344{padding-top: 25px !important;padding-bottom: 55px !important;}.vc_custom_1498224873115{margin-bottom: -33px !important;padding-top: 25px !important;padding-bottom: 65px !important;background-color: #f0f2f5 !important;}.vc_custom_1496919080330{margin-bottom: 0px !important;padding-top: 0px !important;}.vc_custom_1496132852286{padding-top: 0px !important;}.vc_custom_1499082614064{margin-top: 0px !important;margin-bottom: 5px !important;}.vc_custom_1499082621150{margin-top: 0px !important;margin-right: 15px !important;}.vc_custom_1499082576140{margin-top: 0px !important;}.vc_custom_1499088836620{margin-bottom: 0px !important;}.vc_custom_1496753940431{margin-bottom: 22px !important;}.vc_custom_1499088870008{margin-bottom: 4px !important;}.vc_custom_1499088859928{margin-bottom: 0px !important;}.vc_custom_1499088864455{margin-bottom: 0px !important;}.vc_custom_1499083189466{margin-bottom: 15px !important;padding-bottom: 0px !important;}.vc_custom_1499088891743{margin-bottom: 0px !important;padding-top: 0px !important;}.vc_custom_1499088898260{margin-bottom: 0px !important;padding-top: 0px !important;}.vc_custom_1499088905446{margin-bottom: 0px !important;padding-top: 0px !important;}.vc_custom_1497346024955{padding-top: 6px !important;padding-right: 25px !important;padding-bottom: 15px !important;padding-left: 25px !important;}.vc_custom_1496736721661{padding-top: 20px !important;}.vc_custom_1497603080648{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497448496787{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497346030874{padding-top: 6px !important;padding-right: 25px !important;padding-bottom: 15px !important;padding-left: 25px !important;}.vc_custom_1497603047485{padding-top: 20px !important;}.vc_custom_1497603087571{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497448511642{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497346035986{padding-top: 6px !important;padding-right: 25px !important;padding-bottom: 15px !important;padding-left: 25px !important;}.vc_custom_1496736732342{padding-top: 20px !important;}.vc_custom_1497603094225{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497448526746{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1499089343518{margin-bottom: 0px !important;padding-top: 0px !important;}.vc_custom_1499089349064{margin-bottom: 0px !important;padding-top: 0px !important;}.vc_custom_1499089353786{margin-bottom: 0px !important;padding-top: 0px !important;}.vc_custom_1497346053147{padding-top: 6px !important;padding-right: 25px !important;padding-bottom: 15px !important;padding-left: 25px !important;}.vc_custom_1497428025585{padding-top: 20px !important;}.vc_custom_1497603145744{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497448545363{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497346047802{padding-top: 6px !important;padding-right: 25px !important;padding-bottom: 15px !important;padding-left: 25px !important;}.vc_custom_1496736727233{padding-top: 20px !important;}.vc_custom_1497603154004{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497448556041{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497346042235{padding-top: 6px !important;padding-right: 25px !important;padding-bottom: 15px !important;padding-left: 25px !important;}.vc_custom_1497428041136{padding-top: 20px !important;}.vc_custom_1497603159699{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497448570174{margin-bottom: 10px !important;margin-left: 60px !important;}.vc_custom_1497530906573{padding-top: 100px !important;}.vc_custom_1497614288703{margin-left: 10px !important;padding-top: 55px !important;}.vc_custom_1497605052696{margin-bottom: 10px !important;}.vc_custom_1497605062843{margin-bottom: 10px !important;}.vc_custom_1497605100108{margin-bottom: 10px !important;}.vc_custom_1497605086785{margin-bottom: 10px !important;}.vc_custom_1499083301093{margin-bottom: 0px !important;}.vc_custom_1496754095634{margin-top: 0px !important;margin-bottom: 22px !important;}.vc_custom_1496754139129{margin-bottom: 25px !important;}.vc_custom_1499083244845{margin-bottom: 0px !important;}.vc_custom_1499083170232{margin-bottom: 2px !important;padding-bottom: 0px !important;}.vc_custom_1499083342938{margin-bottom: 0px !important;}.vc_custom_1498742627254{margin-bottom: -20px !important;padding-top: 0px !important;}.vc_custom_1499164546289{padding-top: 35px !important;}.vc_custom_1499163775473{margin-bottom: 0px !important;}.vc_custom_1494938596828{margin-bottom: 0px !important;margin-left: -20px !important;}.vc_custom_1494938592509{margin-bottom: 0px !important;margin-left: -30px !important;}.vc_custom_1494938588724{margin-bottom: 0px !important;margin-left: -30px !important;}.vc_custom_1494938584382{margin-bottom: 0px !important;margin-left: -30px !important;}.vc_custom_1494938548294{margin-bottom: 0px !important;margin-left: -30px !important;}.vc_custom_1498743148812{padding-right: 30% !important;}.vc_custom_1499690846387{margin-bottom: 3px !important;}.vc_custom_1499164688265{margin-top: 0px !important;}.vc_custom_1498223837249{margin-right: 20px !important;}.vc_custom_1498224528125{margin-top: 22px !important;}.vc_custom_1497358910593{margin-bottom: 22px !important;}.vc_custom_1498223860683{margin-top: 35px !important;padding-bottom: 30px !important;}.vc_custom_1499083503993{margin-bottom: 0px !important;}.vc_custom_1499083525655{margin-bottom: 0px !important;}.vc_custom_1499083529759{margin-bottom: 0px !important;}.vc_custom_1498224464167{margin-bottom: 10px !important;}.vc_custom_1498224623021{margin-bottom: 8px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }
+</style>
+</noscript>
+</head>
+
+<!-- BODY STARTS -->
+
+
+<body class="home page-template page-template-template-home-transparent-header page-template-template-home-transparent-header-php page page-id-13648 wp-custom-logo theme-skilled woocommerce-no-js tribe-no-js header-top page-title-enabled skilled-sensei-paid_courses wpb-js-composer js-comp-ver-6.2.0 vc_responsive woocommerce">
+		
+	<div class="header-mobile">
+		<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1498731873916"><div class="wpb_wrapper"><div id="wh-mobile-menu" class="respmenu-wrap">
+	<div class="respmenu-header">
+
+		<!-- Mobile LOGO -->
+					<a href="index.html" class="respmenu-header-logo-link">
+				<img src="app/uploads/sites/8/2017/07/01.png" class="respmenu-header-logo" alt="mobile-logo">
+			</a>
+				<div class="respmenu-open">
+					<hr>
+			<hr>
+			<hr>
+				</div>
+	</div>
+	<div class="menu-mobile-menu-container"><ul id="menu-mobile-menu" class="respmenu"><li id="menu-item-14270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13648 current_page_item menu-item-14270 msm-top-level-item"><a href="index.html" aria-current="page">Home</a></li>
+<li id="menu-item-14271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14271 msm-top-level-item"><a href="#">About Us</a></li>
+<li id="menu-item-14272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14272 msm-top-level-item"><a href="#">Blog</a></li>
+<li id="menu-item-14273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14273 msm-top-level-item"><a href="#">Contact</a></li>
+<li id="menu-item-14275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14275 msm-top-level-item"><a href="#">Gallery</a></li>
+<li id="menu-item-14276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14276 msm-top-level-item"><a href="#">Search Courses</a></li>
+<li id="menu-item-14277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14277 msm-top-level-item"><a href="#">Services</a></li>
+	</ul></div></div>
+
+</div>
+</div>
+</div>
+ </div>	
+	</div>
+
+	<!-- mobile header end -->
+
+
+	
+	<!-- WEB LOGO upper footer start --> 
+
+
+		<div class="cbp-row wh-header top wh-sticky-header-enabled">
+		<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid overflow-visible vc_custom_1499246862736 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner vc_custom_1497355882172"><div class="wpb_wrapper">
+          	<div class="wpb_single_image wpb_content_element vc_align_left vc_custom_1499082227376">
+          		<figure class="wpb_wrapper vc_figure">
+          			<a href="index.html"><img class=" vc_single_image-img" src="app/uploads/sites/8/2017/07/02.png" alt="Logo"/></a>
+          		</figure>
+          	</div>
+		  </div>
+		</div>
+	</div>
+
+		
+		<!-- HOME ABOUT US LOgo all -->
+		<div class="width-auto wpb_column vc_column_container vc_col-sm-6">
+			<div class="vc_column-inner vc_custom_1499247862475">
+			
+			<!-- Login btn -->
+
+			<div class="width-auto pull-right sk-accent-text wpb_column vc_column_container vc_col-sm-2 vc_hidden-md vc_hidden-sm vc_hidden-xs">
+				<div class="vc_column-inner vc_custom_1499247888242">
+					<div class="wpb_wrapper" > 
+						<button type="button" class="btn btn-outline-dark " id="loginbtn">Login</button> 
+				  
+			 
+			</div>
+
+			
+		</div>
+		</div>
+
+			<!--login btn end -->
+
+			
+			
+			<div class="wpb_wrapper">
+				
+				<div id="cbp-menu-main" class="cbp-container vc_pull-left vc_custom_1497448436115">
+				<ul id="menu-main-menu" class="sf-menu wh-menu-main">
+					 
+						<!-- HOME -->
+
+						<li id="menu-item-13647" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13647 msm-top-level-item">
+			                   <a href="#">HOME</a>
+					   </li>
+
+					   <!-- Home -->
+
+					   <!-- ABOUT US -->
+					   <li id="menu-item-13647" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13647 msm-top-level-item">
+						<a href="#">ABOUT US</a>
+						<ul class="sub-menu">
+							<li id="menu-item-13632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13632"><a href="index.html">IIC 2018-19</a></li>
+							<li id="menu-item-14362" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14362"><a href="index.html">IIC 2019-20</a></li>
+							<li id="menu-item-14363" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14363"><a href="index.html">IIC 2020-21</a></li>
+							 
+						</ul>
+				</li>
+
+					   <!-- ABOUT US -->
+					   
+
+<!-- Innovation contest -->
+
+<li id="menu-item-14337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14337 msm-top-level-item msm-menu-item menu-item-has-children msm-hover">
+	<a href="#">Innovation contest</a>
+	
+	<div class="msm-submenu" data-depth="0" data-position="center" data-bg-color="#00182b">
+ 
+</li>
+
+<!-- IMPACT LECTURE SERIES -->
+
+
+<li id="menu-item-13482" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13482 msm-top-level-item">
+	<a href="#">IMPACT LECTURE SERIES</a>
+ 
+</li>
+
+
+<!-- Innovation Ambassdor -->
+<li id="menu-item-13486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13486 msm-top-level-item">
+	<a href="#">Innovation Ambassdor</a>
+ 
+</li>
+
+<!-- Online sessions -->
+
+<li id="menu-item-13486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13486 msm-top-level-item">
+	<a href="#">Online sessions</a>
+ 
+</li>
+
+<!-- Online sessions end -->
+
+<!-- Gallery start -->
+ 
+<li id="menu-item-13638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13638 msm-top-level-item">
+	<a href="#">Gallery</a>
+	<ul class="sub-menu">
+		<li id="menu-item-13632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13632"><a href="index.html">Photos</a></li>
+		<li id="menu-item-14362" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14362"><a href="index.html">Videos</a></li>
+		<li id="menu-item-14363" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14363"><a href="index.html">News</a></li>
+		 
+	</ul>
+</li>
+
+<!-- Gallery end -->
+ 
+ 
+	</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Menu End -->
+
+
+
+<div class="width-auto pull-right wpb_column vc_column_container vc_col-sm-3">
+	
+	<div class="vc_column-inner vc_custom_1499247879465">
+		
+		<div class="wpb_wrapper">
+
+		 
+
+
+			<!-- Google icon -->
+			<div class="vc_icon_element vc_icon_element-outer vc_custom_1495712042896 pull-left vc_icon_element-align-center vc_icon_element-have-style">
+				<div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-xs vc_icon_element-style-rounded vc_icon_element-background vc_icon_element-background-color-custom"  style="background-color:#dd4b39">
+					<span class="vc_icon_element-icon fa fa-google-plus" >
+
+				</span><a class="vc_icon_element-link" href="#"  title="" target="_self">
+
+				</a>
+			</div>
+		</div>
+		<!-- you tube icon -->
+
+		<div class="vc_icon_element vc_icon_element-outer vc_custom_1495712050544 pull-left vc_icon_element-align-center vc_icon_element-have-style">
+			<div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-xs vc_icon_element-style-rounded vc_icon_element-background vc_icon_element-background-color-custom"  style="background-color:#e52d27">
+				<span class="vc_icon_element-icon fa fa-youtube" >
+
+			</span><a class="vc_icon_element-link" href="#"  title="" target="_self">
+
+			</a>
+		</div>
+	</div>
+
+	<!-- facebook icon -->
+
+	<div class="vc_icon_element vc_icon_element-outer vc_custom_1495712057678 pull-left vc_icon_element-align-center vc_icon_element-have-style"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-xs vc_icon_element-style-rounded vc_icon_element-background vc_icon_element-background-color-blue" >
+		<span class="vc_icon_element-icon fa fa-facebook" ></span>
+		<a class="vc_icon_element-link" href="#"  title="" target="_self"></a>
+	</div>
+</div>
+
+<!-- twitter icon -->
+
+<div class="vc_icon_element vc_icon_element-outer vc_custom_1495712065253 pull-left vc_icon_element-align-center vc_icon_element-have-style">
+	<div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-xs vc_icon_element-style-rounded vc_icon_element-background vc_icon_element-background-color-custom"  style="background-color:#55acee">
+		<span class="vc_icon_element-icon fa fa-twitter" ></span><a class="vc_icon_element-link" href="#"  title="" target="_self">
+
+		</a>
+	</div>
+</div>
+
+<!-- twitter icon end -->
+</div>
+</div>
+</div>
+
+<!-- Whole menu Row end -->
+
+
+<!-- <div class="width-auto pull-right sk-accent-text wpb_column vc_column_container vc_col-sm-2 vc_hidden-md vc_hidden-sm vc_hidden-xs">
+		<div class="vc_column-inner vc_custom_1499247888242">
+			<div class="wpb_wrapper">
+				<h3 style="font-size: 12px;color: #666667;line-height: 20px;text-align: center" class="vc_custom_heading vc_custom_1555408991145" >
+	<em>FREE CALL:</em> 888-234-45</h3>
+	<h3 style="font-size: 12px;color: #666667;line-height: 20px;text-align: center" class="vc_custom_heading vc_custom_1499247185503" >
+		<em>EMAIL US:</em> info[at]coach.com</h3>
+	</div>
+</div>
+</div> -->
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="vc_row-full-width vc_clearfix"></div>
+	</div>
+	<!-- upper footer end -->
+
+
+
+
+	
+<div class="cbp-row wh-content">
+    <div class="cbp-container wh-padding">
+
+                                    <div class="vc_row wpb_row vc_row-fluid lin-top-bg vc_custom_1497359293459 vc_row-has-fill">
+										<div class="wpb_column vc_column_container vc_col-sm-12">
+											<div class="vc_column-inner vc_custom_1496919080330">
+												<div class="wpb_wrapper">
+													<div class="wpb_layerslider_element wpb_content_element">
+														<script type="text/javascript">jQuery(function() { _initLayerSlider( '#layerslider_2_1uqvksguixzwg', {sliderVersion: '6.5.1', type: 'fullwidth', skin: 'v6', globalBGSize: 'cover', navPrevNext: false, hoverPrevNext: false, navStartStop: false, navButtons: false, showCircleTimer: false, skinsPath: 'http://skilled.aislinthemes.com/app/plugins/LayerSlider/assets/static/layerslider/skins/'}); });
+														</script><div id="layerslider_2_1uqvksguixzwg" class="ls-wp-container fitvidsignore" style="width:1200px;height:950px;margin:0 auto;margin-bottom: 0px;"><div class="ls-slide" data-ls="kenburnsscale:1.2;"><img width="1920" height="950" src="app/uploads/sites/8/2017/06/bg.jpg" id="banner" class="ls-bg" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+														<!-- <img width="606" height="451" src="app/uploads/sites/8/2017/06/01.png" class="ls-l" alt="" sizes="(max-width: 606px) 100vw, 606px" style="top:468px;left:544px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;" data-ls="showinfo:1;offsetyin:200px;easingin:easeOutQuint;"><a style="" class="ls-l" href="#" target="_self" data-ls="showinfo:1;hover:true;hovereasingin:linear;hovereasingout:easeInOutCubic;hoveropacity:1;hoverbgcolor:#f4cf02;"> -->
+															<!-- <p style="top:498px;left:33px;text-align:center;font-weight:400;font-style:normal;text-decoration:none;font-family:rubik;font-size:16px;border-radius:3px;color:#002e5b;background:#f9e600;width:156px;height:32px;padding-top:15px;" class="">Get started</p></a><img width="499" height="376" src="app/uploads/sites/8/2017/06/00.jpg" class="ls-l" alt="" sizes="(max-width: 499px) 100vw, 499px" style="top:495px;left:598px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;" data-ls="showinfo:1;offsetyin:200px;"> -->
+															<!-- <img width="499" height="376" src="app/uploads/sites/8/2017/06/022.jpg" class="ls-l" alt=""sizes="(max-width: 499px) 100vw, 499px" style="top:495px;left:598px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;" data-ls="showinfo:1;offsetyin:200px;"><a style="" class="ls-l" href="#" target="_self" data-ls="showinfo:1;hover:true;hovereasingin:linear;hovereasingout:easeInOutCubic;hoveropacity:1;hoverbgcolor:#f4cf02;"> -->
+																<!-- <p style="top:498px;left:207px;text-align:center;font-weight:400;font-style:normal;text-decoration:none;font-family:rubik;font-size:16px;border-radius:3px;color:#002e5b;background:#ffffff;width:156px;height:32px;padding-top:15px;" class="">Learn about</p></a> -->
+															<!-- <a style="" class="ls-l" href="#" target="_self" data-ls="showinfo:1;hover:true;hovereasingin:easeInQuad;hovereasingout:easeInOutQuint;hoveropacity:1;hoverbgcolor:#ffffff;hoveralwaysontop:false;"><p style="z-index:110;top:649px;left:808px;text-align:right;font-weight:400;font-style:normal;text-decoration:none;font-family:rubik;font-size:16px;border-radius:3px;color:#002e5b;background:rgba(250, 233, 0, 0.91);width:55px;height:40px;padding-top:25px;padding-right:20px;" class=""> 
+															</p></a> -->
+															<!-- <p style="top:205px;left:30px;text-align:initial;font-weight:500;font-style:normal;text-decoration:none;font-family:rubik;color:#ffffff;font-size:45px;line-height:48px;width:500px;white-space:normal;" class="ls-l" data-ls="showinfo:1;">training IT professionals to become excellent at service and support</p> -->
+															<!-- <p style="top:419px;left:30px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;font-family:rubik;color:#d4d4d4;font-size:16px;line-height:24px;width:500px;white-space:normal;" class="ls-l" data-ls="showinfo:1;">Please check my reviews on Google Reviews and Yelp Reviews in order to learn more about my work.</p><img width="25" height="47" src="app/uploads/sites/8/2017/06/0002.png" class="ls-l" alt="" style="z-index:110;top:668px;left:838px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;width:20px;height:27px;" data-ls="showinfo:1;hover:true;hoveropacity:1;"> -->
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+								<!-- Row Backgrounds --><div class="vc_row wpb_row vc_row-fluid vc_custom_1497448007205"><div class="wpb_column vc_column_container vc_col-sm-12">
+																<div class="vc_column-inner vc_custom_1496132852286"><div class="wpb_wrapper"><div style="font-size: 28px;color: #464646;line-height: 37px;text-align: left" class="vc_custom_heading vc_custom_1499082614064" >We work on the forefront of innovation and technology to take products</div><div style="font-size: 28px;color: #464646;line-height: 37px;text-align: left" class="vc_custom_heading pull-left vc_custom_1499082621150" >from an way to the end consumer.</div><div style="font-size: 28px;color: #117ac4;line-height: 42px;text-align: left" class="vc_custom_heading pull-left vc_custom_1499082576140" ><a href="#"><u> Request a quote </u></a></div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1496736953040 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1499088836620"><div class="wpb_wrapper"><h3 style="font-size: 35px;color: #012e5b;text-align: center" class="vc_custom_heading vc_custom_1496753940431" >features</h3><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1499088870008"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499088859928"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499088864455"><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_7 vc_sep_pos_align_center vc_separator_no_text vc_custom_1499083189466  vc_custom_1499083189466 sk-separator" ><span class="vc_sep_holder vc_sep_holder_l"><span  style="border-color:#fde428;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  style="border-color:#fde428;" class="vc_sep_line"></span></span>
+</div>
+</div>
+</div>
+</div>
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1497605231627 vc_row-has-fill"><div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499088891743"><div class="wpb_wrapper">		<div class="wh-content-box vc_custom_1497346024955  scp_content_box-a2c75dc281cfa3fb88aa5fb72002af48">
+					<div class="wh-theme-icon vc_custom_1496736721661  scp_theme_icon-354a732adcab3c94e6ed16ade1b888d9">
+				<i class="icon-skilledround-account-button-with-user-inside"></i>
+			</div>
+				<h3 style="font-size: 18px;color: #012e5b;line-height: 25px;text-align: left" class="vc_custom_heading vc_custom_1497603080648" >Trade and markets monitor<br />
+competition on markets</h3><p style="font-size: 14px;color: rgba(0,0,0,0.66);line-height: 22px;text-align: left" class="vc_custom_heading vc_custom_1497448496787" >This talk was presented to a loca<br />
+l audience at TEDxDU 2010.</p>		</div>
+		</div></div></div><div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499088898260"><div class="wpb_wrapper">		<div class="wh-content-box vc_custom_1497346030874  scp_content_box-b3186e095a87308614d7c53c5f41b53f">
+					<div class="wh-theme-icon vc_custom_1497603047485  scp_theme_icon-028112d43e803e334f83cb31274d207a">
+				<i class="icon-skilledmegaphone"></i>
+			</div>
+				<h3 style="font-size: 18px;color: #012e5b;line-height: 25px;text-align: left" class="vc_custom_heading vc_custom_1497603087571" >Competition authorities all over the world </h3><p style="font-size: 14px;color: rgba(0,0,0,0.66);line-height: 22px;text-align: left" class="vc_custom_heading vc_custom_1497448511642" >This talk was presented to a loca<br />
+l audience at independent event.<br />
+</p>		</div>
+		</div></div></div><div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499088905446"><div class="wpb_wrapper">		<div class="wh-content-box vc_custom_1497346035986  scp_content_box-ca12bf87001f96b754bfbe4e6cdf0c53">
+					<div class="wh-theme-icon vc_custom_1496736732342  scp_theme_icon-da31af46bc480627ae5820dafbe369c0">
+				<i class="icon-skilledlight-bulb"></i>
+			</div>
+				<h3 style="font-size: 18px;color: #012e5b;line-height: 25px;text-align: left" class="vc_custom_heading vc_custom_1497603094225" >Provide independent advice based on research</h3><p style="font-size: 14px;color: rgba(0,0,0,0.66);line-height: 22px;text-align: left" class="vc_custom_heading vc_custom_1497448526746" >This talk was presented to a loca<br />
+l audience at independent event.<br />
+</p>		</div>
+		</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1497605283518 vc_row-has-fill"><div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499089343518"><div class="wpb_wrapper">		<div class="wh-content-box vc_custom_1497346053147  scp_content_box-25d7bfc49ec44426954d41b9f7a5d7f9">
+					<div class="wh-theme-icon vc_custom_1497428025585  scp_theme_icon-fb0f9cf1592710a2a252d9202663f5bf">
+				<i class="icon-skilledplay-sign"></i>
+			</div>
+				<h3 style="font-size: 18px;color: #012e5b;line-height: 25px;text-align: left" class="vc_custom_heading vc_custom_1497603145744" >Discover how we can give you the bigger picture</h3><p style="font-size: 14px;color: rgba(0,0,0,0.66);line-height: 22px;text-align: left" class="vc_custom_heading vc_custom_1497448545363" >This talk was presented to a loca<br />
+l audience at independent event.<br />
+</p>		</div>
+		</div></div></div><div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499089349064"><div class="wpb_wrapper">		<div class="wh-content-box vc_custom_1497346047802  scp_content_box-eea85607c20cbaf5cc105e07040fb642">
+					<div class="wh-theme-icon vc_custom_1496736727233  scp_theme_icon-df323c4d4c6793e48c398b73784b4acc">
+				<i class="icon-skilledtime4"></i>
+			</div>
+				<h3 style="font-size: 18px;color: #012e5b;line-height: 25px;text-align: left" class="vc_custom_heading vc_custom_1497603154004" >Determine your primary<br />
+and secondary goals</h3><p style="font-size: 14px;color: rgba(0,0,0,0.66);line-height: 22px;text-align: left" class="vc_custom_heading vc_custom_1497448556041" >This talk was presented to a loca<br />
+l audience at independent event.<br />
+</p>		</div>
+		</div></div></div><div class="wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499089353786"><div class="wpb_wrapper">		<div class="wh-content-box vc_custom_1497346042235  scp_content_box-e039a0acce6ff7ea3f372fe6a40b9561">
+					<div class="wh-theme-icon vc_custom_1497428041136  scp_theme_icon-00a1b93e536ccdd29631c8b6f9b2f071">
+				<i class="icon-skilledcustomer2"></i>
+			</div>
+				<h3 style="font-size: 18px;color: #012e5b;line-height: 25px;text-align: left" class="vc_custom_heading vc_custom_1497603159699" >Goal is to draw upon research and experience</h3><p style="font-size: 14px;color: rgba(0,0,0,0.66);line-height: 22px;text-align: left" class="vc_custom_heading vc_custom_1497448570174" >This talk was presented to a loca<br />
+l audience at independent event.<br />
+</p>		</div>
+		</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1499082708901 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1497530906573"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1497614288703"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><h5 style="font-size: 55px;color: #ffffff;text-align: left" class="vc_custom_heading" >321</h5><h3 style="font-size: 14px;color: #ffffff;line-height: 20px;text-align: left" class="vc_custom_heading vc_custom_1497605052696" >Cases completed<br />
+</h3></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><h5 style="font-size: 55px;color: #ffffff;text-align: left" class="vc_custom_heading" >27</h5><h3 style="font-size: 14px;color: #ffffff;line-height: 20px;text-align: left" class="vc_custom_heading vc_custom_1497605062843" >Consultants<br />
+</h3></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><h5 style="font-size: 55px;color: #ffffff;text-align: left" class="vc_custom_heading" >125</h5><h3 style="font-size: 14px;color: #ffffff;line-height: 20px;text-align: left" class="vc_custom_heading vc_custom_1497605100108" >Awards winning<br />
+</h3></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><h5 style="font-size: 55px;color: #ffffff;text-align: left" class="vc_custom_heading" >100%</h5><h3 style="font-size: 14px;color: #ffffff;line-height: 20px;text-align: left" class="vc_custom_heading vc_custom_1497605086785" >Satisfied customers<br />
+</h3></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_layerslider_element wpb_content_element"><script type="text/javascript">jQuery(function() { _initLayerSlider( '#layerslider_4_niu6pw5dp8u8', {sliderVersion: '6.3.0', skin: 'v6', globalBGSize: 'cover', navPrevNext: false, hoverPrevNext: false, navStartStop: false, navButtons: false, showCircleTimer: false, skinsPath: 'http://skilled.aislinthemes.com/app/plugins/LayerSlider/assets/static/layerslider/skins/'}); });</script><div id="layerslider_4_niu6pw5dp8u8" class="ls-wp-container fitvidsignore" style="width:330px;height:330px;margin:0 auto;margin-bottom: 0px;"><div class="ls-slide" data-ls="kenburnsscale:1.2;"><p style="top:3px;left:12px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;width:305px;height:305px;color:#ffd51e;background:#ffd51e;border-radius:50%;" class="ls-l" data-ls="showinfo:1;"></p><p style="top:55px;left:77px;text-align:initial;font-weight:700;font-style:normal;text-decoration:none;font-family:rubik;font-size:23px;color:#ffffff;" class="ls-l" data-ls="showinfo:1;">100% money</p><p style="top:81px;left:78px;text-align:initial;font-weight:700;font-style:normal;text-decoration:none;font-family:rubik;font-size:23px;color:#ffffff;" class="ls-l" data-ls="showinfo:1;"> back guarantee</p><img width="79" height="82" src="app/uploads/sites/8/2017/06/guarantee.png" class="ls-l" alt="" style="top:115px;left:81px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;" data-ls="showinfo:1;"><p style="top:204px;left:84px;text-align:initial;font-weight:300;font-style:normal;text-decoration:none;width:170px;color:#545454;font-family:rubik;font-size:12px;line-height:17px;white-space:normal;" class="ls-l" data-ls="showinfo:1;">Please check my reviews on Google Reviews and Yelp Reviews</p></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1497359159460"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1499083301093"><div class="wpb_wrapper"><h3 style="font-size: 38px;color: #012e5b;text-align: center" class="vc_custom_heading vc_custom_1496754095634" >latest news</h3><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1496754139129"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499083244845"><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_7 vc_sep_pos_align_center vc_separator_no_text vc_custom_1499083170232  vc_custom_1499083170232 sk-separator" ><span class="vc_sep_holder vc_sep_holder_l"><span  style="border-color:#fde428;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  style="border-color:#fde428;" class="vc_sep_line"></span></span>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div>		<div class="linp-post-list  linp_post_list-75236859249a281716f5a04bfd4b0c84 horizontal">
+							<div class="vc_row">
+																		<div class="wh-padding item one fourth">
+								<div class="img-container">
+			<a href="index.html"
+			   title="First Ankara Big Data Meetup"><img width="768" height="496" src="app/uploads/sites/8/2015/07/04-768x496.jpg" class="post-list-thumb wp-post-image" alt="" /></a>
+		</div>
+		<div class="data">
+		<h6><a title="First Ankara Big Data Meetup"
+		       href="index.html">First Ankara Big Data Meetup</a></h6>
+		<div class="content">
+						<p>Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a&hellip;</p>
+		</div>
+		<hr/>
+			<div class="meta-data">
+                <span class="date">
+                    2017-12-09                </span>
+						<span class="author">
+                by <a
+					href="index.html">
+					aislin				</a>
+            </span>
+		</div>
+	</div>
+</div>																								<div class="wh-padding item one fourth">
+								<div class="img-container">
+			<a href="index.html"
+			   title="Learn the language of love, morbi venenatis lacinia"><img width="768" height="496" src="app/uploads/sites/8/2015/11/03-1-768x496.png" class="post-list-thumb wp-post-image" alt="" /></a>
+		</div>
+		<div class="data">
+		<h6><a title="Learn the language of love, morbi venenatis lacinia"
+		       href="index.html">Learn the language of love, morbi venenatis lacinia</a></h6>
+		<div class="content">
+						<p>Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a&hellip;</p>
+		</div>
+		<hr/>
+			<div class="meta-data">
+                <span class="date">
+                    2017-06-13                </span>
+						<span class="author">
+                by <a
+					href="index.html">
+					aislin				</a>
+            </span>
+		</div>
+	</div>
+</div>																								<div class="wh-padding item one fourth">
+								<div class="img-container">
+			<a href="index.html"
+			   title="Trip to Knaresborough, Speaking club, Going to the pub"><img width="768" height="496" src="app/uploads/sites/8/2015/01/960x-768x496.jpg" class="post-list-thumb wp-post-image" alt="" /></a>
+		</div>
+		<div class="data">
+		<h6><a title="Trip to Knaresborough, Speaking club, Going to the pub"
+		       href="index.html">Trip to Knaresborough, Speaking club, Going to the pub</a></h6>
+		<div class="content">
+						<p>Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a&hellip;</p>
+		</div>
+		<hr/>
+			<div class="meta-data">
+                <span class="date">
+                    2017-01-24                </span>
+						<span class="author">
+                by <a
+					href="index.html">
+					aislin				</a>
+            </span>
+		</div>
+	</div>
+</div>																								<div class="wh-padding item one fourth">
+								<div class="img-container">
+			<a href="index.html"
+			   title="What course will your life take? Morbi venenatis lacinia"><img width="768" height="496" src="app/uploads/sites/8/2015/01/soludtion-funders-768x496.jpg" class="post-list-thumb wp-post-image" alt="" /></a>
+		</div>
+		<div class="data">
+		<h6><a title="What course will your life take? Morbi venenatis lacinia"
+		       href="index.html">What course will your life take? Morbi venenatis lacinia</a></h6>
+		<div class="content">
+						<p>Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a&hellip;</p>
+		</div>
+		<hr/>
+			<div class="meta-data">
+                <span class="date">
+                    2017-01-24                </span>
+						<span class="author">
+                by <a
+					href="index.html">
+					aislin				</a>
+            </span>
+		</div>
+	</div>
+</div>															</div>
+								</div>
+		</div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1499083342938"><div class="wpb_wrapper"><div class="wpb_layerslider_element wpb_content_element"><script type="text/javascript">jQuery(function() { _initLayerSlider( '#layerslider_3_fbnuqzlizvgg', {sliderVersion: '6.5.1', type: 'fullwidth', autoStart: false, keybNav: false, touchNav: false, skin: 'v6', navPrevNext: false, hoverPrevNext: false, navStartStop: false, navButtons: false, showCircleTimer: false, thumbnailNavigation: 'disabled', allowRestartOnResize: true, skinsPath: 'http://skilled.aislinthemes.com/app/plugins/LayerSlider/assets/static/layerslider/skins/'}); });</script><div id="layerslider_3_fbnuqzlizvgg" class="ls-wp-container fitvidsignore" style="width:1280px;height:660px;margin:0 auto;margin-bottom: 0px;"><div class="ls-slide" data-ls="bgcolor:#f0f2f5;duration:10000;timeshift:-1000;kenburnsscale:1.2;"><div style="top:93px;left:1001px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;width:200px;height:470px;border-radius:0px;background:#012e5b;" class="ls-l" data-ls="showinfo:1;offsetxin:-65;delayin:300;static:forever;"></div><a style="" class="ls-l" href="#1" target="_self" data-ls="showinfo:1;offsetxin:-65;delayin:500;hover:true;hoverdurationin:300;hoveropacity:0.7;hoveralwaysontop:false;static:forever;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/01-logo.png" class="" alt="" style="cursor:pointer;top:155px;left:1109px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;opacity:0.5;height:31px;width:62px;"></a><a style="" class="ls-l" href="#2" target="_self" data-ls="showinfo:1;offsetxin:-65;delayin:550;hover:true;hoverdurationin:300;hoveropacity:0.7;hoveralwaysontop:false;static:forever;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/02-logo.png" class="" alt="" style="cursor:pointer;top:232px;left:1111px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;opacity:0.6;height:31px;width:62px;"></a><a style="" class="ls-l" href="#3" target="_self" data-ls="showinfo:1;offsetxin:-65;delayin:600;hover:true;hoverdurationin:300;hoveropacity:0.7;hoveralwaysontop:false;static:forever;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/03-logo.png" class="" alt="" style="cursor:pointer;top:310px;left:1112px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;opacity:0.5;width:62px;height:31px;"></a><a style="" class="ls-l" href="#4" target="_self" data-ls="showinfo:1;offsetxin:-65;delayin:650;hover:true;hoverdurationin:300;hoveropacity:0.7;hoveralwaysontop:false;static:forever;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/04-logo.png" class="" alt="" style="cursor:pointer;top:387px;left:1115px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;opacity:0.8;height:31px;width:62px;"></a><a style="" class="ls-l" href="#5" target="_self" data-ls="showinfo:1;offsetxin:-65;delayin:700;hover:true;hoverdurationin:300;hoveropacity:0.7;hoveralwaysontop:false;static:forever;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/05-logo.png" class="" alt="" style="cursor:pointer;top:462px;left:1113px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;opacity:0.5;width:62px;height:31px;"></a><div style="box-shadow: 3px 3px 20px rgba(0,0,0,0.15);top:93px;left:80px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;width:1000px;height:470px;background:#ffffff;border-radius:0px;" class="ls-l" data-ls="showinfo:1;offsetyin:-150;durationin:800;easingin:easeOutQuint;scaleyin:0.8;static:forever;"></div><a style="" class="ls-l" href="index.html" target="_self" data-ls="showinfo:1;offsetyin:-20;delayin:500;easingin:easeOutQuint;texttransitionin:true;texttypein:lines_asc;textshiftin:0;textoffsetyin:0|-10;texteasingin:easeOutQuint;textfadein:false;textstartatin:transitioninstart + 0;"><p style="top:146px;left:655px;text-align:center;font-weight:600;font-style:normal;text-decoration:none;font-family:rubik;font-size:35px;color:#012e5b;width:360px;white-space:normal;" class="">Unity - case study </p></a><p style="top:260px;left:676px;text-align:left;font-weight:300;font-style:normal;text-decoration:none;font-family:rubik;font-size:15px;color:#8c8c8c;width:360px;line-height:22px;white-space:normal;" class="ls-l" data-ls="showinfo:1;offsetyin:-70;durationin:1400;delayin:500;easingin:easeOutQuint;">Please check my reviews on Google Reviews and Yelp Reviews in order to learn more about my work.My name is Ann King. There are a few Ann’s with special skills.</p><p style="top:368px;left:697px;text-align:left;font-weight:300;font-style:normal;text-decoration:none;font-family:rubik;font-size:15px;color:#8c8c8c;width:360px;line-height:22px;white-space:normal;" class="ls-l" data-ls="showinfo:1;offsetyin:-70;durationin:1400;delayin:500;easingin:easeOutQuint;">Courses for all levels cover 
+</p><p style="top:403px;left:697px;text-align:left;font-weight:300;font-style:normal;text-decoration:none;font-family:rubik;font-size:15px;color:#8c8c8c;width:360px;line-height:22px;white-space:normal;" class="ls-l" data-ls="showinfo:1;offsetyin:-70;durationin:1400;delayin:500;easingin:easeOutQuint;">Technical skills, creative 
+</p><p style="top:438px;left:697px;text-align:left;font-weight:300;font-style:normal;text-decoration:none;font-family:rubik;font-size:15px;color:#8c8c8c;width:360px;line-height:22px;white-space:normal;" class="ls-l" data-ls="showinfo:1;offsetyin:-70;durationin:1400;delayin:500;easingin:easeOutQuint;">Techniques, business</p><p style="top:204px;left:676px;text-align:left;font-weight:500;font-style:normal;text-decoration:none;font-family:rubik;font-size:15px;color:#636363;width:360px;line-height:22px;white-space:normal;" class="ls-l" data-ls="showinfo:1;offsetyin:-70;durationin:1400;delayin:500;easingin:easeOutQuint;">Courses for all levels cover Technical skills, creative Techniques, business </p><div style="top:380px;left:678px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;height:1px;width:10px;background:#404040;border-radius:0px;color:#fde428;" class="ls-l" data-ls="showinfo:1;offsetyin:-55;durationin:1300;delayin:500;easingin:easeOutQuint;"></div><div style="top:415px;left:678px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;height:1px;width:10px;background:#404040;border-radius:2px;color:#fde428;" class="ls-l" data-ls="showinfo:1;offsetyin:-55;durationin:1300;delayin:500;easingin:easeOutQuint;"></div><div style="top:449px;left:678px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;height:1px;width:10px;background:#404040;border-radius:2px;color:#fde428;" class="ls-l" data-ls="showinfo:1;offsetyin:-55;durationin:1300;delayin:500;easingin:easeOutQuint;"></div><img width="504" height="341" src="app/uploads/sites/8/layerslider/furniture-slider/case-01.png" class="ls-l" alt="" sizes="(max-width: 504px) 100vw, 504px" style="top:149px;left:138px;text-align:initial;font-weight:500;font-style:normal;text-decoration:none;width:504px;height:341px;" data-ls="showinfo:1;offsetyin:-100lh;durationin:1500;delayin:500;easingin:easeOutQuint;fadein:false;clipin:100% 0 0 0;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/01-logo.png" class="ls-l" alt="" style="cursor:pointer;top:155px;left:1109px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;height:31px;width:62px;" data-ls="showinfo:1;durationin:500;delayin:1000;"></div><div class="ls-slide" data-ls="bgcolor:#f0f2f5;duration:10000;timeshift:-1000;kenburnsscale:1.2;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/02-logo.png" class="ls-l" alt="" style="cursor:pointer;z-index:110;top:232px;left:1111px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;height:31px;width:62px;" data-ls="showinfo:1;durationin:500;hover:true;hoverdurationin:300;hoveropacity:0.7;hoveralwaysontop:false;"><img width="960" height="674" src="app/uploads/sites/8/2015/01/960x.jpg" class="ls-l" alt="" sizes="(max-width: 960px) 100vw, 960px" style="z-index:110;top:144px;left:141px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;height:341px;width:504px;" data-ls="showinfo:1;delayin:500;"><p style="z-index:110;top:267px;left:664px;text-align:right;font-weight:300;font-style:normal;text-decoration:none;font-family:rubik;font-size:15px;color:#8c8c8c;width:370px;line-height:22px;white-space:normal;" class="ls-l" data-ls="showinfo:1;offsetxin:-30;durationin:1500;delayin:900;easingin:easeOutQuint;">Each Capri Accent Lamp is hand-blown with a milk glass interior and a bold colored outer layer. The result: lustrous, opaque, poppy and crafty, with polished nickel accents. Place one on each nightstand for a pop of color and a swoon-worthy silhouette.</p><p style="z-index:110;top:204px;left:664px;text-align:right;font-weight:400;font-style:normal;text-decoration:none;font-family:rubik;font-size:15px;color:#525252;width:370px;line-height:22px;white-space:normal;" class="ls-l" data-ls="showinfo:1;offsetxin:-30;durationin:1500;delayin:900;easingin:easeOutQuint;">Each Capri Accent Lamp is hand-blown with a milk glass interior and a bold colored outer layer. </p><a style="" class="ls-l" href="index.html" target="_self" data-ls="showinfo:1;offsetxin:-30;durationin:1500;delayin:750;easingin:easeOutQuint;"><p style="z-index:110;top:140px;left:706px;text-align:right;font-weight:600;font-style:normal;text-decoration:none;font-family:rubik;font-size:35px;color:#012e5b;width:330px;" class="">Pfizer - case study </p></a></div><div class="ls-slide" data-ls="bgcolor:#f0f2f5;duration:10000;timeshift:-1000;kenburnsscale:1.2;parallaxtype:3d;parallaxaxis:x;parallaxrotate:20;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/03-logo.png" class="ls-l" alt="" style="cursor:pointer;z-index:110;top:310px;left:1111px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;width:62px;height:31px;" data-ls="showinfo:1;durationin:500;hover:true;hoverdurationin:300;hoveropacity:0.7;hoveralwaysontop:false;"><a style="" class="ls-l" href="index.html" target="_self" data-ls="showinfo:1;rotateyin:10;transformoriginin:50% 386% 200;parallax:true;parallaxlevel:-8;"><p style="z-index:110;top:136px;left:427px;text-align:center;font-weight:600;font-style:normal;text-decoration:none;font-family:Rubik;font-size:35px;color:#012e5b;" class="">Amazon - case study </p></a><p style="z-index:110;top:226px;left:248px;text-align:center;font-weight:300;font-style:normal;text-decoration:none;font-family:rubik;font-size:15px;color:#8c8c8c;width:720px;line-height:22px;white-space:normal;" class="ls-l" data-ls="showinfo:1;rotateyin:10;transformoriginin:50% 141.7% 200;parallax:true;parallaxlevel:-8;">A marriage of clean and comfy, the Danner Collection boasts architectural lines and solid wood bases with tapered legs that friendly without sacrificing style. Available in your choice of fabric and finish.</p><div style="z-index:110;top:200px;left:572px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;height:5px;width:54px;background:#fde428;border-radius:0px;" class="ls-l" data-ls="showinfo:1;rotateyin:10;transformoriginin:50% 3900% 250;parallax:true;parallaxlevel:-10;"></div><img width="372" height="305" src="app/uploads/sites/8/layerslider/furniture-slider/untitled-1.jpg" class="ls-l" alt="" sizes="(max-width: 372px) 100vw, 372px" style="z-index:110;top:296px;left:343px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;width:250px;" data-ls="showinfo:1;easingin:easeInExpo;"><img width="372" height="305" src="app/uploads/sites/8/layerslider/furniture-slider/untitled-2.jpg" class="ls-l" alt="" sizes="(max-width: 372px) 100vw, 372px" style="z-index:110;top:295px;left:616px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;width:250px;" data-ls="showinfo:1;easingin:easeOutExpo;"></div><div class="ls-slide" data-ls="bgcolor:#f0f2f5;duration:10000;timeshift:-700;kenburnsscale:1.2;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/04-logo.png" class="ls-l" alt="" style="cursor:pointer;z-index:110;top:387px;left:1115px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;height:31px;width:62px;" data-ls="showinfo:1;durationin:500;hover:true;hoverdurationin:300;hoveropacity:0.7;hoveralwaysontop:false;"><img width="504" height="341" src="app/uploads/sites/8/layerslider/furniture-slider/case-01.png" class="ls-l" alt="" sizes="(max-width: 504px) 100vw, 504px" style="z-index:110;top:147px;left:521px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;height:341px;width:504px;" data-ls="showinfo:1;durationin:3000;easingin:easeOutElastic;rotatein:-30;transformoriginin:47.9% 0% 0;"><a style="" class="ls-l" href="index.html" target="_self" data-ls="showinfo:1;durationin:3000;easingin:easeOutElastic;rotatein:-30;transformoriginin:129.6% -93% 0;texttransitionin:true;texttypein:lines_asc;textoffsetxin:-30;texteasingin:easeOutQuint;textstartatin:transitioninstart + 200;textscalexin:1.2;textscaleyin:1.2;"><p style="z-index:110;top:142px;left:148px;text-align:left;font-weight:600;font-style:normal;text-decoration:none;font-family:rubik;font-size:35px;color:#012e5b;width:300px;white-space:normal;" class="">Nieuwe heren - case studie</p></a><p style="z-index:110;top:243px;left:149px;text-align:left;font-weight:300;font-style:normal;text-decoration:none;font-family:rubik;font-size:15px;color:#8c8c8c;width:240px;line-height:21px;white-space:normal;" class="ls-l" data-ls="showinfo:1;durationin:3000;easingin:easeOutElastic;rotatein:-30;transformoriginin:193.1% -132.5% 0;texttransitionin:true;texttypein:lines_asc;textshiftin:100;textstartatin:transitioninstart + 300;textscalexin:1.2;textscaleyin:1.2;texttransformoriginin:0% 50% 0;">Traditional elegance meets modern glamour in our Jacques Six-Arm Chandelier. A custom-tooled brass ring supports six thick Lucite stems with swanky grey silk shades. Modernize a traditional dining room or amplify a formal entryway.</p></div><div class="ls-slide" data-ls="bgcolor:#f0f2f5;duration:10000;timeshift:-1000;kenburnsscale:1.2;"><img width="62" height="31" src="app/uploads/sites/8/layerslider/furniture-slider/05-logo.png" class="ls-l" alt="" style="cursor:pointer;z-index:110;top:462px;left:1113px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;width:62px;height:31px;" data-ls="showinfo:1;durationin:500;hover:true;hoverdurationin:300;hoveropacity:0.7;hoveralwaysontop:false;"><img width="499" height="376" src="app/uploads/sites/8/2017/06/00.jpg" class="ls-l" alt="" sizes="(max-width: 499px) 100vw, 499px" style="z-index:110;top:140px;left:136px;text-align:initial;font-weight:400;font-style:normal;text-decoration:none;" data-ls="showinfo:1;"><a style="" class="ls-l" href="index.html" target="_self" data-ls="showinfo:1;durationin:3000;easingin:easeOutExpo;transformoriginin:129.6% -93% 0;"><p style="z-index:110;top:137px;left:770px;text-align:right;font-weight:600;font-style:normal;text-decoration:none;font-family:rubik;font-size:35px;color:#012e5b;width:250px;white-space:normal;" class="">Forbes - case studies</p></a><p style="z-index:110;top:235px;left:819px;text-align:right;font-weight:300;font-style:normal;text-decoration:none;width:200px;font-family:rubik;font-size:15px;line-height:22px;white-space:normal;" class="ls-l" data-ls="showinfo:1;durationin:3000;rotatein:-30;transformoriginin:193.1% -132.5% 0;">Traditional elegance meets modern glamour in our Jacques Six-Arm Chandelier. A custom-tooled brass ring supports six thick Lucite stems with swanky grey silk shades. Modernize a traditional dining room or amplify a formal entryway.</p></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-xs"><div class="vc_column-inner vc_custom_1498742627254"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_right  vc_custom_1499163775473">
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="410" height="509" src="app/uploads/sites/8/2017/06/00.png" class="vc_single_image-img attachment-full" alt="" sizes="(max-width: 410px) 100vw, 410px" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1499164546289"><div class="wpb_wrapper"><div class="vc_empty_space  hide-on-mobile hide-on-small-tablet"   style="height: 30px"><span class="vc_empty_space_inner"></span></div><div class="vc_icon_element vc_icon_element-outer vc_custom_1494938596828 pull-left vc_icon_element-align-left"><div class="vc_icon_element-inner vc_icon_element-color-custom vc_icon_element-size-sm vc_icon_element-style- vc_icon_element-background-color-grey" ><span class="vc_icon_element-icon fa fa-star" style="color:#ffa912 !important"></span></div></div><div class="vc_icon_element vc_icon_element-outer vc_custom_1494938592509 pull-left vc_icon_element-align-left"><div class="vc_icon_element-inner vc_icon_element-color-custom vc_icon_element-size-sm vc_icon_element-style- vc_icon_element-background-color-grey" ><span class="vc_icon_element-icon fa fa-star" style="color:#ffa912 !important"></span></div></div><div class="vc_icon_element vc_icon_element-outer vc_custom_1494938588724 pull-left vc_icon_element-align-left"><div class="vc_icon_element-inner vc_icon_element-color-custom vc_icon_element-size-sm vc_icon_element-style- vc_icon_element-background-color-grey" ><span class="vc_icon_element-icon fa fa-star" style="color:#ffa912 !important"></span></div></div><div class="vc_icon_element vc_icon_element-outer vc_custom_1494938584382 pull-left vc_icon_element-align-left"><div class="vc_icon_element-inner vc_icon_element-color-custom vc_icon_element-size-sm vc_icon_element-style- vc_icon_element-background-color-grey" ><span class="vc_icon_element-icon fa fa-star" style="color:#ffa912 !important"></span></div></div><div class="vc_icon_element vc_icon_element-outer vc_custom_1494938548294 pull-left vc_icon_element-align-left"><div class="vc_icon_element-inner vc_icon_element-color-custom vc_icon_element-size-sm vc_icon_element-style- vc_icon_element-background-color-grey" ><span class="vc_icon_element-icon fa fa-star" style="color:#ffa912 !important"></span></div></div><h1 style="font-size: 28px;color: #333333;line-height: 43px;text-align: left" class="vc_custom_heading vc_custom_1498743148812" >Please check my reviews on Google Reviews and Yelp Reviews in order to learn more about my work.</h1><h5 style="font-size: 28px;color: #333333;line-height: 43px;text-align: left" class="vc_custom_heading" >Jules, Database Manager</h5></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1499690859344"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><h3 style="font-size: 35px;color: #ffffff;line-height: 40px;text-align: center" class="vc_custom_heading vc_custom_1499690846387" >in the digital space, attention is a</h3><h3 style="font-size: 35px;color: #ffe929;line-height: 40px;text-align: center" class="vc_custom_heading vc_custom_1499164688265" >currecy. we earn it. we spend it.</h3></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(images/bg-1.jpg)" data-image-id="id^13902|url^images/bg-1.jpg|caption^null|alt^null|title^bg|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="6.2.0"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1498224873115 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner vc_custom_1498223837249"><div class="wpb_wrapper"><h3 style="font-size: 35px;color: #012e5b;text-align: left" class="vc_custom_heading vc_custom_1497358910593" >download free guides</h3><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1498223860683"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499083503993"><div class="wpb_wrapper"><p style="text-align: left" class="vc_custom_heading dash-before" >work fewer hours and make money</p><p style="text-align: left" class="vc_custom_heading dash-before" >attract and retain quality</p><p style="text-align: left" class="vc_custom_heading dash-before" >manage your time so you’ll get more</p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499083525655"><div class="wpb_wrapper"><p style="text-align: left" class="vc_custom_heading dash-before" >sharp leadership skills to manage</p><p style="text-align: left" class="vc_custom_heading dash-before" >cut expenses no sacrificing quality</p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1499083529759"><div class="wpb_wrapper"></div></div></div></div><div role="form" class="wpcf7" id="wpcf7-f13744-p13648-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
+
+<div class="download-form">
+<span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name" /></span><br />
+<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" /></span><br />
+<button type="submit">Get now</button>
+</div>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1498224528125"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1498224464167">
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="app/uploads/sites/8/2017/06/book-02-170x160.png" width="170" height="160" alt="book-02" title="book-02" /></div>
+		</figure>
+	</div>
+<h3 style="font-size: 35px;color: #012e5b;text-align: left" class="vc_custom_heading vc_custom_1498224623021" >download</h3><p style="text-align: left" class="vc_custom_heading" >travel and aviation consulting</p></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+                        </div>
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+	<div class="cbp-row wh-footer">
+		<div class="cbp-container wh-padding">
+			<section class="vc_section"><div id="footer-top" class="vc_row wpb_row vc_row-fluid vc_custom_1498816027003"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1498815965908"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><h5 style="font-size: 18px;color: #ffffff;text-align: left" class="vc_custom_heading vc_custom_1496749370573" >about skilled</h5><p style="font-size: 14px;color: #ffffff;line-height: 23px;text-align: left" class="vc_custom_heading vc_custom_1495456492688" >Please input an email address down below.
+address down below school. Please input an email.
+Below and school.</p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_col-xs-6"><div class="vc_column-inner vc_custom_1490007556855"><div class="wpb_wrapper"><h5 style="font-size: 18px;color: #ffffff;text-align: left" class="vc_custom_heading vc_custom_1496749480644" >our links</h5><p style="font-size: 15px;line-height: 23px;text-align: left" class="vc_custom_heading vc_custom_1495456315180" ><a href="#">Classroom</a></p><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456319476" ><a href="#">Events</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456323955" ><a href="#">News</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1555409007585" ><a href="#">About us</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456327524" ><a href="#">Instagram</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456331131" ><a href="#">Brochure</a></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_col-xs-6"><div class="vc_column-inner vc_custom_1490007547463"><div class="wpb_wrapper"><h5 style="font-size: 18px;color: #ffffff;text-align: left" class="vc_custom_heading vc_custom_1496749498711" >social links</h5><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456367890" ><a href="#">Open houses</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456359690" ><a href="#">Enrollment</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456355098" ><a href="#">Preschool</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456349979" ><a href="#">Kindergarten</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456345189" ><a href="#">Elementary</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456340590" ><a href="#">Extended care</a></div><div style="font-size: 15px;text-align: left" class="vc_custom_heading vc_custom_1495456336327" ><a href="#">Handbook</a></div></div></div></div></div></div></div></div><div class="get-in-touch-block wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1498816102915"><div class="wpb_wrapper"><h5 style="font-size: 18px;color: #ffffff;text-align: left" class="vc_custom_heading vc_custom_1496749513529" >get in touch</h5><p style="font-size: 14px;color: #ffffff;line-height: 23px;text-align: left" class="vc_custom_heading vc_custom_1495456492688" >Please input an email address down below.
+address down below school. Please input an email.
+Below and school.</p><div class="vc_icon_element vc_icon_element-outer vc_custom_1494415337866 pull-left vc_icon_element-align-left vc_icon_element-have-style"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-xs vc_icon_element-style-rounded vc_icon_element-background vc_icon_element-background-color-custom"  style="background-color:#dd4b39"><span class="vc_icon_element-icon fa fa-google-plus" ></span><a class="vc_icon_element-link" href="#"  title="" target="_self"></a></div></div><div class="vc_icon_element vc_icon_element-outer vc_custom_1494415343524 pull-left vc_icon_element-align-left vc_icon_element-have-style"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-xs vc_icon_element-style-rounded vc_icon_element-background vc_icon_element-background-color-custom"  style="background-color:#e52d27"><span class="vc_icon_element-icon fa fa-youtube" ></span><a class="vc_icon_element-link" href="#"  title="" target="_self"></a></div></div><div class="vc_icon_element vc_icon_element-outer vc_custom_1494415348901 pull-left vc_icon_element-align-left vc_icon_element-have-style"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-xs vc_icon_element-style-rounded vc_icon_element-background vc_icon_element-background-color-blue" ><span class="vc_icon_element-icon fa fa-facebook" ></span><a class="vc_icon_element-link" href="#"  title="" target="_self"></a></div></div><div class="vc_icon_element vc_icon_element-outer vc_custom_1494415353492 pull-left vc_icon_element-align-left vc_icon_element-have-style"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-have-style-inner vc_icon_element-size-xs vc_icon_element-style-rounded vc_icon_element-background vc_icon_element-background-color-custom"  style="background-color:#55acee"><span class="vc_icon_element-icon fa fa-twitter" ></span><a class="vc_icon_element-link" href="#"  title="" target="_self"></a></div></div></div></div></div></div><!-- Row Backgrounds --><div class="upb_color" data-bg-override="0" data-bg-color="" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="6.2.0"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1498645418339 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1498645263172"><div class="wpb_wrapper"><h5 style="font-size: 18px;color: #ffffff;text-align: left" class="vc_custom_heading vc_custom_1496751804171" >enter the fold</h5><p style="font-size: 14px;color: #ffffff;line-height: 23px;text-align: left" class="vc_custom_heading vc_custom_1496753735175" >Join the elite group of other people who</p><p style="font-size: 14px;color: #ffffff;line-height: 23px;text-align: left" class="vc_custom_heading vc_custom_1498645354858" >signed in on our mailing list.</p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1498645524637"><div class="wpb_wrapper"><div role="form" class="wpcf7" id="wpcf7-f13661-o2" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
+
+<p style="display:flex;"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Enter your email" /></span><br />
+<button type="submit" style="margin-left:-2px"><i class="fa fa-arrow-right"></i></button></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1498645429174"><div class="wpb_wrapper"></div></div></div></div><!-- Row Backgrounds --><div class="upb_color" data-bg-override="0" data-bg-color="#030a1c" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="6.2.0"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1496911172780"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-6"><div class="vc_column-inner vc_custom_1491466992847"><div class="wpb_wrapper"><p style="text-align: left" class="vc_custom_heading" >Terms - Privacy Policy &amp; © 2020 IIC</p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-6"><div class="vc_column-inner vc_custom_1491466989293"><div class="wpb_wrapper"><p style="text-align: right" class="vc_custom_heading" >© 2020 All Rights Reserved</p></div></div></div></div><!-- Row Backgrounds --><div class="upb_color" data-bg-override="0" data-bg-color="#030a1c" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="6.2.0"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div></section>		</div>
+	</div>
+<input type="hidden" name="_aislin_cart_url" value="#">
+	
+	
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+
+<link rel='stylesheet' id='vc_material-css'  href='app/plugins/js_composer/assets/css/lib/vc-material/vc_material.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='vc_animate-css-css'  href='app/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='vc_font_awesome_5_shims-css'  href='app/plugins/js_composer/assets/lib/bower/font-awesome/css/v4-shims.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='vc_font_awesome_5-css'  href='app/plugins/js_composer/assets/lib/bower/font-awesome/css/all.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ult-background-style-css'  href='app/plugins/ultimate_vc_addons/assets/min-css/background-style.min.css' type='text/css' media='all' />
+
+<script type='text/javascript' src='app/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript' src='business/wp-includes/js/jquery/ui/core.min.js'></script>
+<script type='text/javascript' src='business/wp-includes/js/jquery/ui/widget.min.js'></script>
+<script type='text/javascript' src='business/wp-includes/js/jquery/ui/tabs.min.js'></script>
+<script type='text/javascript' src='app/plugins/timetable/js/jquery.qtip.min.js'></script>
+<script type='text/javascript' src='app/plugins/timetable/js/jquery.ba-bbq.min.js'></script>
+<script type='text/javascript' src='app/plugins/timetable/js/jquery.caroufredsel-6.2.1-packed.js'></script>
+
+
+
+<script type='text/javascript' src='app/themes/skilled/assets/js/plugins/fitvids.js'></script>
+<script type='text/javascript' src='app/themes/skilled/assets/js/plugins/superfish.js'></script>
+<script type='text/javascript' src='app/themes/skilled/assets/js/plugins/hoverintent.js'></script>
+<script type='text/javascript' src='app/themes/skilled/assets/js/plugins/scrollup.js'></script>
+<script type='text/javascript' src='app/themes/skilled/assets/js/plugins/jquery.sticky.js'></script>
+<script type='text/javascript' src='app/themes/skilled/assets/js/plugins/natural-width-height.js'></script>
+<script type='text/javascript' src='app/themes/skilled/assets/js/wheels-main.min.js'></script>
+<script type='text/javascript' src='business/wp-includes/js/wp-embed.js'></script>
+
+<script type='text/javascript' src='app/plugins/js_composer/assets/js/dist/js_composer_front.min.js'></script>
+<script type='text/javascript' src='app/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js'></script>
+<script type='text/javascript' src='app/plugins/ultimate_vc_addons/assets/min-js/jquery-appear.min.js'></script>
+<script type='text/javascript' src='app/plugins/ultimate_vc_addons/assets/min-js/ultimate_bg.min.js'></script>
+<script type='text/javascript' src='app/plugins/ultimate_vc_addons/assets/min-js/custom.min.js'></script>
+
+
+</body>
+
+</html>
